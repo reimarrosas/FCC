@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Customer Survey Form</h1>
+        <p id="description">
+          Survey about the demographics of our customer
+        </p>
+      </header>
+      <form id="survey-form">
+        <label id="name-label" for="cust-name">Name:</label>
+        <input
+          type="text"
+          name="name"
+          id="cust-name"
+          placeholder="Enter your name"
+          required
+        />
+        <label id="email-label" for="cust-email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="cust-email"
+          placeholder="Enter your email"
+          required
+        />
+        <label id="number-label" for="cust-age"
+          >Age (Optional):</label
+        >
+        <input
+          type="number"
+          name="age"
+          id="cust-age"
+          placeholder="Age"
+          min="18"
+          max="80"
+        />
+        <label for="dropdown"
+          >Which of the following roles best describe you?</label
+        >
+        <select name="current-role" id="dropdown">
+          <option value="default-prompt">
+            Select an option
+          </option>
+          <option value="student">Student</option>
+          <option value="full-time">Full-time Employee</option>
+          <option value="part-time">Part-time Employee</option>
+          <option value="self-employed">Self-Employed</option>
+          <option value="none">None of the above</option>
+        </select>
+        <fieldset id="radios">
+          <legend>Where have you hear of our product?</legend>
+          <input type="radio" name="encounter" id="hearsay" />
+          <label for="hearsay">Hearsay</label>
+          <input type="radio" name="encounter" id="friend" />
+          <label for="friend">Friends</label>
+          <input type="radio" name="encounter" id="family" />
+          <label for="family">Family</label>
+          <input type="radio" name="encounter" id="none" />
+          <label for="none">None of the above</label>
+        </fieldset>
+        <fieldset id="checkboxes">
+          <legend>Which of the following describes you?</legend>
+          <input type="checkbox" name="skills" id="front-end" />
+          <label for="front-end">Front-end Developer</label>
+          <input type="checkbox" name="skills" id="back-end" />
+          <label for="back-end">Back-end Developer</label>
+          <input type="checkbox" name="skills" id="full-stack" />
+          <label for="front-end">Full-stack Developer</label>
+          <input type="checkbox" name="skills" id="devops" />
+          <label for="front-end">DevOps</label>
+        </fieldset>
+        <label for="comments"
+          >Any other comments/suggestions:</label
+        >
+        <textarea
+          name="comments"
+          id="comments"
+          cols="30"
+          rows="10"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </form>
+    </div>
+  </body>
+</html>
