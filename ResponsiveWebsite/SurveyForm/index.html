@@ -19,29 +19,29 @@
         </p>
       </header>
       <form id="survey-form">
-        <label id="name-label" for="cust-name">Name:</label>
+        <label id="name-label" for="name">Name:</label>
         <input
           type="text"
           name="name"
-          id="cust-name"
+          id="name"
           placeholder="Enter your name"
           required
         />
-        <label id="email-label" for="cust-email">Email:</label>
+        <label id="email-label" for="email">Email:</label>
         <input
           type="email"
           name="email"
-          id="cust-email"
+          id="email"
           placeholder="Enter your email"
           required
         />
-        <label id="number-label" for="cust-age"
+        <label id="number-label" for="number"
           >Age (Optional):</label
         >
         <input
           type="number"
           name="age"
-          id="cust-age"
+          id="number"
           placeholder="Age"
           min="18"
           max="80"
@@ -61,25 +61,81 @@
         </select>
         <fieldset id="radios">
           <legend>Where have you hear of our product?</legend>
-          <input type="radio" name="encounter" id="hearsay" />
-          <label for="hearsay">Hearsay</label>
-          <input type="radio" name="encounter" id="friend" />
-          <label for="friend">Friends</label>
-          <input type="radio" name="encounter" id="family" />
-          <label for="family">Family</label>
-          <input type="radio" name="encounter" id="none" />
-          <label for="none">None of the above</label>
+          <label for="hearsay"
+            ><input
+              type="radio"
+              name="encounter"
+              id="hearsay"
+              value="hearsay"
+            />
+            Hearsay</label
+          >
+          <label for="friend"
+            ><input
+              type="radio"
+              name="encounter"
+              id="friend"
+              value="friends"
+            />
+            Friends</label
+          >
+          <label for="family"
+            ><input
+              type="radio"
+              name="encounter"
+              id="family"
+              value="family"
+            />
+            Family</label
+          >
+          <label for="none"
+            ><input
+              type="radio"
+              name="encounter"
+              id="none"
+              value="none"
+            />
+            None of the above</label
+          >
         </fieldset>
         <fieldset id="checkboxes">
           <legend>Which of the following describes you?</legend>
-          <input type="checkbox" name="skills" id="front-end" />
-          <label for="front-end">Front-end Developer</label>
-          <input type="checkbox" name="skills" id="back-end" />
-          <label for="back-end">Back-end Developer</label>
-          <input type="checkbox" name="skills" id="full-stack" />
-          <label for="front-end">Full-stack Developer</label>
-          <input type="checkbox" name="skills" id="devops" />
-          <label for="front-end">DevOps</label>
+          <label for="front-end"
+            ><input
+              type="checkbox"
+              name="skills"
+              id="front-end"
+              value="front-end"
+            />
+            Front-end Developer</label
+          >
+          <label for="back-end"
+            ><input
+              type="checkbox"
+              name="skills"
+              id="back-end"
+              value="back-end"
+            />
+            Back-end Developer</label
+          >
+          <label for="front-end"
+            ><input
+              type="checkbox"
+              name="skills"
+              id="full-stack"
+              value="full-stack"
+            />
+            Full-stack Developer</label
+          >
+          <label for="front-end"
+            ><input
+              type="checkbox"
+              name="skills"
+              id="devops"
+              value="devops"
+            />
+            DevOps</label
+          >
         </fieldset>
         <label for="comments"
           >Any other comments/suggestions:</label
@@ -87,10 +143,9 @@
         <textarea
           name="comments"
           id="comments"
-          cols="30"
-          rows="10"
           placeholder="Enter your comment here..."
         ></textarea>
+        <button type="submit" id="submit">Submit</button>
       </form>
     </div>
   </body>
