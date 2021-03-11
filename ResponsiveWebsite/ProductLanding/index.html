@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="shortcut icon"
+      href="images/logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Product Landing Page</title>
+  </head>
+  <body>
+    <div class="home" id="home"></div>
+    <!----------------- HEADER START ----------------->
+    <header class="page-header" id="header">
+      <div class="header-container container">
+        <nav class="navbar" id="nav-bar">
+          <div class="logo">
+            <img
+              src="images/logo.png"
+              alt="Logo of the VR company."
+              class="header-img"
+              id="header-img"
+            />
+            <h1 class="header-title title">VR Tech</h1>
+          </div>
+          <button
+            class="nav-links-toggle"
+            aria-label="Show navigation menu."
+          >
+            <span class="burger"></span>
+          </button>
+          <ul class="nav-links">
+            <li class="nav-link"><a href="#home">Home</a></li>
+            <li class="nav-link">
+              <a href="#how-it-works">How it works</a>
+            </li>
+            <li class="nav-link">
+              <a href="#features">Features</a>
+            </li>
+            <li class="nav-link">
+              <a href="#pricing">Pricing</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!----------------- HEADER END ----------------->
+
+    <!----------------- HERO START  ----------------->
+    <main class="page-hero section-margin">
+      <div class="hero-container">
+        <aside class="product-image">
+          <img
+            src="https://images.unsplash.com/photo-1613325436307-5489b00ba07a"
+            alt="Image of the product."
+          />
+        </aside>
+        <div class="text-content">
+          <header class="hero-heading">
+            <h1 class="hero-title title">The Future is NOW</h1>
+            <p class="hero-context">
+              Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Id nesciunt voluptates dignissimos porro
+              voluptate reprehenderit commodi temporibus itaque,
+              officia recusandae?
+            </p>
+          </header>
+          <section class="form-subscribe">
+            <form
+              method="POST"
+              action="https://www.freecodecamp.com/email-submit"
+              id="form"
+            >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                aria-label="Your email."
+                placeholder="Enter your email"
+              />
+              <input
+                class="btn"
+                id="submit"
+                type="submit"
+                value="Subscribe"
+              />
+            </form>
+          </section>
+        </div>
+      </div>
+    </main>
+    <!----------------- HERO END ----------------->
+
+    <!----------------- HOW IT WORKS START ----------------->
+    <section
+      class="how-it-works section-margin"
+      id="how-it-works"
+    >
+      <div class="how-it-works-container container">
+        <h1 class="how-it-works-title title">How it works</h1>
+        <iframe
+          id="video"
+          src="https://www.youtube.com/embed/i4Zt3JZejbg"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+    <!----------------- HOW IT WORKS END ----------------->
+
+    <!----------------- FEATURES START ----------------->
+    <article class="features section-margin" id="features">
+      <div class="features-container container">
+        <h1 class="features-title title">Features</h1>
+        <ul class="feature-list">
+          <li class="feature">
+            <div class="feature-heading">
+              <img
+                src="https://cdn.onlinewebfonts.com/svg/img_478440.svg"
+                alt="Logo for advance technology feature"
+                class="feature-logo"
+              />
+              <h2 class="feature-name subtitle">
+                Bleeding Edge Technology
+              </h2>
+            </div>
+            <p class="feature-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Id, officiis!
+            </p>
+          </li>
+          <li class="feature">
+            <div class="feature-heading">
+              <img
+                src="https://cdn.onlinewebfonts.com/svg/img_67887.png"
+                alt="Logo for high resolution feature"
+                class="feature-logo"
+              />
+              <h2 class="feature-name subtitle">
+                High Resolution
+              </h2>
+            </div>
+            <p class="feature-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Minus, exercitationem.
+            </p>
+          </li>
+          <li class="feature">
+            <div class="feature-heading">
+              <img
+                src="https://cdn.onlinewebfonts.com/svg/img_426261.svg"
+                alt="Logo for immersion feature"
+                class="feature-logo"
+              />
+              <h2 class="feature-name subtitle">Immersion</h2>
+            </div>
+            <p class="feature-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Natus, amet?
+            </p>
+          </li>
+        </ul>
+      </div>
+    </article>
+    <!----------------- FEATURES END ----------------->
+
+    <!----------------- PRICING START ----------------->
+    <section class="pricing section-margin" id="pricing">
+      <h1 class="pricing-title title container">Pricing</h1>
+      <div class="pricing-container">
+        <div class="card pricing-cards ex1-price">
+          <img
+            src="https://developers.google.com/vr/images/Cardboard_viewer_cropped.png"
+            alt="Image of product 1"
+            class="price-product-img"
+          />
+          <h2 class="product-name subtitle">VR Starter</h2>
+          <a href="#" class="btn">Read more...</a>
+        </div>
+        <div class="card pricing-cards ex2-price">
+          <img
+            src="https://clipartsworld.com/images/oculus-vr-png-10.png"
+            alt="Image of product 2"
+            class="price-product-img"
+          />
+          <h2 class="product-name subtitle">VR Casual</h2>
+          <a href="#" class="btn">Read more...</a>
+        </div>
+        <div class="card pricing-cards ex3-price">
+          <img
+            src="https://cdn.shopify.com/s/files/1/1616/5109/files/BNK-9007-Mantis_PR10.png?11463654400908330692"
+            alt="Image of product 3"
+            class="price-product-img"
+          />
+          <h2 class="product-name subtitle">VR Enthusiast</h2>
+          <a href="#" class="btn">Read more...</a>
+        </div>
+      </div>
+    </section>
+    <!----------------- PRICING END ----------------->
+
+    <!----------------- FOOTER START ----------------->
+    <footer class="page-footer section-margin">
+      <p><small class="copyright">© VR Tech 2021</small></p>
+    </footer>
+    <!----------------- FOOTER END ----------------->
+
+    <!----------------- SCRIPTS START ----------------->
+    <script>
+      const btn = document.querySelector('.nav-links-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      console.log(navLinks);
+      btn.addEventListener('click', () => {
+        navLinks.classList.toggle('nav-active');
+      });
+    </script>
+    <!----------------- SCRIPTS END ----------------->
+  </body>
+</html>
