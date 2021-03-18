@@ -3,6 +3,7 @@
 
 :root {
   scroll-behavior: smooth;
+  position: relative;
 }
 
 .navbar {
@@ -11,6 +12,7 @@
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 1;
 
   &__links {
     @extend .flex-Xcenter;
@@ -22,25 +24,25 @@
 .hero {
   text-align: center;
   min-height: 100vh;
-  padding: 33vh 0;
+  padding: 35vh 0;
   flex-direction: column;
 
   &__title {
-    @extend .title-main;
+    font-size: 4rem;
   }
 
   &__subtitle {
-    @extend .title-sub;
+    @extend .title--sub;
   }
 }
 
 .projects {
   background-color: $color-dark;
-  text-align: center;
-  padding: 3rem 0;
+  @extend .section--spacing;
 
   &__title {
     color: $color-light;
+    @extend .title--main;
     text-decoration: underline;
     margin-bottom: 1.25em;
   }
@@ -57,6 +59,50 @@
       a:hover {
         transform: scale(1.1);
       }
+
+      @media screen and (max-width: 750px) {
+        flex-direction: column;
+      }
+    }
+  }
+
+  #profile-link {
+    display: inline-block;
+    margin-top: 6em;
+    background-color: $color-light;
+    color: $color-dark;
+    padding: 1em 2em;
+    border-radius: 100px;
+    transition: opacity 250ms ease-in;
+  }
+
+  #profile-link:hover {
+    opacity: 0.75;
+  }
+}
+
+.contact {
+  @extend .section--spacing;
+
+  &__title {
+    @extend .title--main;
+  }
+
+  &__subtitle {
+    @extend .title--sub;
+  }
+
+  &__links {
+    @extend .flex-center;
+    margin-top: 2em;
+    gap: 2em;
+
+    .img-wrapper {
+      transition: transform 250ms ease-out;
+    }
+
+    .img-wrapper:hover {
+      transform: translateY(-10px);
     }
   }
 }

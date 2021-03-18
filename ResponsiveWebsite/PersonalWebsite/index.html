@@ -9,28 +9,28 @@
     <title>Template Project</title>
   </head>
   <body>
-    <header class="header">
-      <nav class="navbar">
-        <div class="container">
-          <ul class="navbar__links">
-            <li><a href="#home" class="navbar__links--link">Home</a></li>
-            <li>
-              <a href="#projects" class="navbar__links--link">Projects</a>
-            </li>
-            <li><a href="#contact" class="navbar__links--link">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <main class="hero" id="home">
-        <h1 class="hero__title">Hi, I'm Reimar</h1>
-        <p class="hero__subtitle">a software developer</p>
-      </main>
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <ul class="navbar__links">
+          <li>
+            <a href="#welcome-section" class="navbar__links--link">Home</a>
+          </li>
+          <li>
+            <a href="#projects" class="navbar__links--link">Projects</a>
+          </li>
+          <li><a href="#contact" class="navbar__links--link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header class="hero" id="welcome-section">
+      <h1 class="hero__title">Hi, I'm Reimar</h1>
+      <p class="hero__subtitle">a software developer</p>
     </header>
     <main class="projects" id="projects">
       <h1 class="projects__title">These are some of my projects.</h1>
       <section class="projects__showcase">
         <div class="projects__showcase--row">
-          <a href="">
+          <a target="_blank" href="https://codepen.io/reimarrosas/full/YzpReYZ">
             <div class="card">
               <img-container
                 ><img
@@ -40,7 +40,7 @@
               <h2>Tribute Page</h2>
             </div>
           </a>
-          <a href="">
+          <a target="_blank" href="https://codepen.io/reimarrosas/full/abBPoEz">
             <div class="card">
               <img-container
                 ><img
@@ -50,18 +50,24 @@
               <h2>Survey Form</h2>
             </div>
           </a>
-          <a href="">
+          <a target="_blank" href="https://codepen.io/reimarrosas/full/YzpdMEg">
             <div class="card">
               <img-container
                 ><img
                   src="images/product-landing.png"
                   alt="Product landing page for a VR Headset company."
               /></img-container>
-              <h2>Product Landing Page</h2>
+              <h2>Landing Page</h2>
             </div>
           </a>
         </div>
       </section>
+      <a
+        target="_blank"
+        id="profile-link"
+        href="https://codepen.io/reimarrosas/"
+        >See more...</a
+      >
     </main>
     <address class="contact" id="contact">
       <h1 class="contact__title">Ways to get in touch...</h1>
@@ -69,9 +75,39 @@
         If you're ever interested in working together
       </p>
       <ul class="contact__links">
-        <li><a href="#" class="contact__links--link"></a></li>
-        <li><a href="#" class="contact__links--link"></a></li>
-        <li><a href="#" class="contact__links--link"></a></li>
+        <li>
+          <a
+            target="_blank"
+            href="https://github.com/reimarrosas"
+            class="contact__links--link"
+          >
+            <div class="img-wrapper">
+              <img src="images/github-icon.svg" alt="Github icon." />
+            </div>
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://codepen.io/reimarrosas/"
+            class="contact__links--link"
+          >
+            <div class="img-wrapper">
+              <img src="images/codepen-logo.svg" alt="Codepen logo." />
+            </div>
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="mailto:reimarrosas0208@gmail.com"
+            class="contact__links--link"
+          >
+            <div class="img-wrapper">
+              <img src="images/mail-logo.svg" alt="Mail logo." />
+            </div>
+          </a>
+        </li>
       </ul>
     </address>
     <script src="scripts/app.js"></script>
