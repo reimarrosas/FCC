@@ -6,7 +6,7 @@
   - [x] Build a Tribute Page
   - [x] Build a Survey Form
   - [x] Build a Product Landing Page
-  - [ ] Build a Technical Documentation Page
+  - [x] Build a Technical Documentation Page
   - [ ] Build a Portfolio Webpage
 - JavaScript Algorithms and Data Structures
   - [ ] Palindrome Checker
