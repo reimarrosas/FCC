@@ -1,2 +1,62 @@
 @import 'defaults';
 @import 'utils';
+
+:root {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: $color-dark;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  &__links {
+    @extend .flex-Xcenter;
+    justify-content: space-evenly;
+    font-size: 1.8rem;
+  }
+}
+
+.hero {
+  text-align: center;
+  min-height: 100vh;
+  padding: 33vh 0;
+  flex-direction: column;
+
+  &__title {
+    @extend .title-main;
+  }
+
+  &__subtitle {
+    @extend .title-sub;
+  }
+}
+
+.projects {
+  background-color: $color-dark;
+  text-align: center;
+  padding: 3rem 0;
+
+  &__title {
+    color: $color-light;
+    text-decoration: underline;
+    margin-bottom: 1.25em;
+  }
+
+  &__showcase {
+    &--row {
+      @extend .flex-center;
+      gap: 5em;
+
+      a {
+        transition: transform 250ms ease-in;
+      }
+
+      a:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

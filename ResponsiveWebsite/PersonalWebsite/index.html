@@ -9,41 +9,57 @@
     <title>Template Project</title>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="container">
-        <ul class="navbar__links">
-          <li><a href="#home" class="navbar__links--link"></a></li>
-          <li><a href="#projects" class="navbar__links--link"></a></li>
-          <li><a href="#contact" class="navbar__links--link"></a></li>
-        </ul>
-      </div>
-    </nav>
-    <header class="hero" id="home">
-      <h1 class="hero__title">Hi, I'm Reimar</h1>
-      <p class="hero__subtitle">a software developer</p>
+    <header class="header">
+      <nav class="navbar">
+        <div class="container">
+          <ul class="navbar__links">
+            <li><a href="#home" class="navbar__links--link">Home</a></li>
+            <li>
+              <a href="#projects" class="navbar__links--link">Projects</a>
+            </li>
+            <li><a href="#contact" class="navbar__links--link">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <main class="hero" id="home">
+        <h1 class="hero__title">Hi, I'm Reimar</h1>
+        <p class="hero__subtitle">a software developer</p>
+      </main>
     </header>
     <main class="projects" id="projects">
       <h1 class="projects__title">These are some of my projects.</h1>
       <section class="projects__showcase">
         <div class="projects__showcase--row">
-          <div class="card">
-            <img src="#" alt="" />
-            <h2>Lorem Ipsum</h2>
-          </div>
-          <div class="card">
-            <img src="#" alt="" />
-            <h2>Lorem Ipsum</h2>
-          </div>
-          <div class="card">
-            <img src="#" alt="" />
-            <h2>Lorem Ipsum</h2>
-          </div>
-        </div>
-        <div class="projects__showcase--row">
-          <div class="card">
-            <img src="#" alt="" />
-            <h2>Lorem Ipsum</h2>
-          </div>
+          <a href="">
+            <div class="card">
+              <img-container
+                ><img
+                  src="images/tribute-page.png"
+                  alt="Tribute website for Stanislav Petrov."
+              /></img-container>
+              <h2>Tribute Page</h2>
+            </div>
+          </a>
+          <a href="">
+            <div class="card">
+              <img-container
+                ><img
+                  src="images/survey-form.png"
+                  alt="Website for a Survey Form."
+              /></img-container>
+              <h2>Survey Form</h2>
+            </div>
+          </a>
+          <a href="">
+            <div class="card">
+              <img-container
+                ><img
+                  src="images/product-landing.png"
+                  alt="Product landing page for a VR Headset company."
+              /></img-container>
+              <h2>Product Landing Page</h2>
+            </div>
+          </a>
         </div>
       </section>
     </main>
