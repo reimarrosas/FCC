@@ -7,13 +7,13 @@
   - [x] Build a Survey Form
   - [x] Build a Product Landing Page
   - [x] Build a Technical Documentation Page
-  - [ ] Build a Portfolio Webpage
+  - [x] Build a Portfolio Webpage
 - JavaScript Algorithms and Data Structures
-  - [ ] Palindrome Checker
-  - [ ] Roman Numeral Converter
-  - [ ] Caesar's Cipher
-  - [ ] Telephone Number Validator
-  - [ ] Cash Register
+  - [x] Palindrome Checker
+  - [x] Roman Numeral Converter
+  - [x] Caesar's Cipher
+  - [x] Telephone Number Validator
+  - [x] Cash Register
 - Front-End Development Libraries
   - [ ] Build a Random Quote Machine
   - [ ] Build a Markdown Previewer
